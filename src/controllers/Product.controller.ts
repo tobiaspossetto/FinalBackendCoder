@@ -10,7 +10,7 @@ export default class productController {
       const products = await service.getAllProducts()
 
       if (products.error) {
-        return res.status(400).json({
+        return res.status(404).json({
           ...products
         })
       } else {
@@ -33,7 +33,7 @@ export default class productController {
       const products = await service.getProductsByCategory(req.params.cat)
 
       if (products.error) {
-        return res.status(400).json({
+        return res.status(404).json({
           ...products
         })
       } else {
@@ -56,7 +56,7 @@ export default class productController {
       const product = await service.getProductsById(req.params.id)
 
       if (product.error) {
-        return res.status(400).json({
+        return res.status(404).json({
           ...product
         })
       } else {

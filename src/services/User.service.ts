@@ -1,5 +1,4 @@
 import { logger } from '../helpers/log4js'
-import { sendMail } from '../helpers/nodemailer'
 // import { sendSms, sendWpp } from '../helpers/twillio'
 // import { OrderModel } from '../Models/OrderModel'
 // import { ProductModel } from '../Models/ProductModel'
@@ -9,9 +8,10 @@ import { sendMail } from '../helpers/nodemailer'
 import { IdataUserRegistration } from '../../types/userTypes'
 import UserPersistence from '../persistence/User.persistence'
 import { createToken } from '../middlewares/jwt'
+import { sendMail, sendSms, sendWpp } from './Notifications.service'
 const persistence = new UserPersistence()
 export default class UserService {
-  async signIn (data:{email:string, password:string}) {
+  async signIn (data:{email:string, password:string}):Promise<{error:Boolean, data:any}> {
     const userExist = await persistence.checkIfEmailExist(data.email)
     if (!userExist) {
       return {
@@ -46,7 +46,7 @@ export default class UserService {
 
   async logOut () {}
 
-  async signUp (userData: IdataUserRegistration) {
+  async signUp (userData: IdataUserRegistration):Promise<{error:Boolean, data:any}> {
     const exist = await persistence.checkIfEmailExist(userData.email)
     if (exist) {
       logger.info('El usuario ya existe')
@@ -113,7 +113,7 @@ export default class UserService {
     }
   }
 
-  async createOrder (userId:string, cart:{productId:string, quantity:number}[]) {
+  async createOrder (userId:string, cart:{productId:string, quantity:number}[]):Promise<{error:Boolean, data:any}> {
     try {
       const user = await persistence.findUserById(userId)
       if (user.error) {
@@ -150,7 +150,32 @@ export default class UserService {
 
       }
       const saved = await persistence.saveNewOrder(order)
-      return saved
+      logger.warn(saved)
+      if (saved.error) {
+        return saved
+      }
+
+      sendMail({
+        to: 'tango45245362@gmail.com',
+        subject: 'Nuevo pedido en la app',
+
+        text: `Hola!! Con este correo se notifica que: ${order.user.name}, ha realizado un nuevo pedido. 🥳️.
+        Esta es la información del pedido:
+        ${JSON.stringify(order, null, 2)}
+
+        `
+      })
+
+      sendSms({ name: order.user.name, code: saved.data._id }, order.user.phone, order.user.email)
+      sendWpp({ name: order.user.name, order })
+
+      return {
+        error: false,
+        data: {
+          message: 'Pedido realizado con exito',
+          orderId: saved.data._id
+        }
+      }
     } catch (error) {
       logger.error(error)
       return ({

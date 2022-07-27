@@ -1,6 +1,5 @@
 import { logger } from '../helpers/log4js'
 import UserService from '../services/User.service'
-import { Iorder } from '../../types/producTypes'
 import { IdataUserRegistration } from '../../types/userTypes'
 import { NextFunction, Request, Response } from 'express'
 const userService = new UserService()
@@ -30,7 +29,9 @@ export default class UserController {
 
   async logOut (req: Request, res: Response, next: NextFunction) {
     req.logout(function (err) {
-      if (err) { return next(err) }
+      if (err) {
+        return next(err)
+      }
       logger.info('el usuario cerro sesion')
       res.redirect('/sign-in')
     })
@@ -38,14 +39,17 @@ export default class UserController {
 
   async signUp (req: Request, res: Response) {
     try {
-      const userData:IdataUserRegistration = req.body
+      const userData: IdataUserRegistration = req.body
       if (!userData.name || !userData.email || !userData.password) {
         return res.status(400).json({
           error: true,
           data: { message: 'Faltan datos' }
         })
       }
-      const result = await userService.signUp({ ...userData, avatar: req.file?.path })
+      const result = await userService.signUp({
+        ...userData,
+        avatar: req.file?.path
+      })
       if (result.error) {
         return res.status(400).json({
           error: true,
@@ -67,21 +71,42 @@ export default class UserController {
   }
 
   async getProfile (req: Request, res: Response) {
-    res.json(req.user).status(200)
+    try {
+      return res.json({ error: false, data: req.user }).status(200)
+    } catch (error) {
+      return res.status(500).json({
+        error: true,
+        data: { message: 'Error del servidor' }
+      })
+    }
   }
 
-  async createOrder (userId:string, cart:Iorder) {
+  async createOrder (req: Request, res: Response) {
     try {
       // @ts-ignore
-      const result = await userService.createOrder(userId, cart)
-      return result
+      const result = await userService.createOrder(req.user.id, req.body.cart)
+      if (result.error) {
+        return res.status(400).json({
+          error: true,
+          data: { ...result.data }
+        })
+      } else {
+        return res
+          .json({
+            error: false,
+            data: result
+          })
+          .status(200)
+      }
     } catch (error) {
       logger.error(error)
-      return {
-        error: true,
-        code: 4,
-        data: { message: 'Ocurrio un error interno' }
-      }
+      return res
+        .json({
+          error: true,
+
+          data: { message: 'Ocurrio un error interno creando el pedido' }
+        })
+        .status(500)
     }
   }
 }

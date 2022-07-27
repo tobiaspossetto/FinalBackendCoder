@@ -17,7 +17,7 @@ export const multerCheck = async (req: Request, res: Response, next: NextFunctio
   const file = req.file
   if (!file) {
     logger.error('no hay file')
-    return res.send('no hay file').status(400)
+    return res.json({ error: true, data: { message: 'Falta el campo Avatar' } }).status(400)
   } else {
     next()
   }
