@@ -7,6 +7,7 @@ export interface IUser extends Document {
   name: string;
   address: string;
   phone: string;
+  admin: boolean;
   avatar: string | undefined;
   createdAt?: Date;
   encryptPassword(password: string): string;

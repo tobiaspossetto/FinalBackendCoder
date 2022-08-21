@@ -13,7 +13,7 @@ export default class UserController {
           data: { ...response.data }
         })
       } else {
-        return res.status(201).json({
+        return res.status(200).json({
           error: false,
           data: { ...response.data }
         })
@@ -40,12 +40,7 @@ export default class UserController {
   async signUp (req: Request, res: Response) {
     try {
       const userData: IdataUserRegistration = req.body
-      if (!userData.name || !userData.email || !userData.password) {
-        return res.status(400).json({
-          error: true,
-          data: { message: 'Faltan datos' }
-        })
-      }
+
       const result = await userService.signUp({
         ...userData,
         avatar: req.file?.path
@@ -56,7 +51,7 @@ export default class UserController {
           data: { ...result.data }
         })
       } else {
-        return res.status(200).json({
+        return res.status(201).json({
           error: false,
           data: { ...result.data }
         })
@@ -95,8 +90,7 @@ export default class UserController {
           .json({
             error: false,
             data: result
-          })
-          .status(200)
+          }).status(201)
       }
     } catch (error) {
       logger.error(error)

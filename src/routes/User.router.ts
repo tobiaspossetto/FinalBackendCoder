@@ -10,8 +10,8 @@ const userController = new UserController()
 const userRouter = Router()
 
 userRouter.post('/sign-in', signInSchema, validateRequest, userController.signIn)
-
-userRouter.post('/sign-up', signUpSchema, validateRequest, upload.single('avatar'), multerCheck, userController.signUp)
+//* checkSignUp esta despues de multer porque sino el req.body aparece vacio
+userRouter.post('/sign-up', upload.single('avatar'), signUpSchema, validateRequest, multerCheck, userController.signUp)
 
 userRouter.post('/logout', verifyToken, userController.logOut)
 

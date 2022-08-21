@@ -12,6 +12,7 @@ const UserSchema = new mongoose.Schema({
   address: { type: String, required: true },
   phone: { type: String, required: true },
   avatar: { type: String, required: true },
+  admin: { type: Boolean, default: false },
   createdAt: { type: Date, default: Date.now }
 
 })

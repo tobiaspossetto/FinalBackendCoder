@@ -1,14 +1,10 @@
 import { logger } from '../helpers/log4js'
-// import { sendSms, sendWpp } from '../helpers/twillio'
-// import { OrderModel } from '../Models/OrderModel'
-// import { ProductModel } from '../Models/ProductModel'
-
-// import { UserModel } from '../Models/User.model'
 
 import { IdataUserRegistration } from '../../types/userTypes'
 import UserPersistence from '../persistence/User.persistence'
 import { createToken } from '../middlewares/jwt'
 import { sendMail, sendSms, sendWpp } from './Notifications.service'
+
 const persistence = new UserPersistence()
 export default class UserService {
   async signIn (data:{email:string, password:string}):Promise<{error:Boolean, data:any}> {
@@ -52,11 +48,9 @@ export default class UserService {
       logger.info('El usuario ya existe')
       return {
         error: true,
-
         data: {
           message: 'El email ya es utilizado'
         }
-
       }
     }
 
@@ -78,7 +72,6 @@ export default class UserService {
           Nombre: ${saved.data.name}
           Direccion: ${saved.data.address}
           Telefono: ${saved.data.phone}
-
         `
       })
       if (emailStatus) {

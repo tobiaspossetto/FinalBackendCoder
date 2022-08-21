@@ -14,12 +14,12 @@ export const createToken = (data:any) => {
 
 export const verifyToken = (req:Request, res:Response, next:NextFunction) => {
   const token = req.header('auth-token')
-  if (!token) return res.status(401).json({ error: 'Acceso denegado' })
+  if (!token) return res.status(403).json({ error: true, data: { message: 'Acceso denegado' } })
   try {
     const verified = jwt.verify(token, <string>process.env.JWT_SECRET_KEY)
     req.user = verified
     next() // continuamos
   } catch (error) {
-    res.status(400).json({ error: 'token no es válido' })
+    return res.status(403).json({ error: true, data: { message: 'Acceso denegado' } })
   }
 }

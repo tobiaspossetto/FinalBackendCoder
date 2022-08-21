@@ -1908,3 +1908,503 @@
 }
 [2022-07-27T17:07:27.435] [ERROR] default - no hay file
 [2022-07-27T17:07:27.445] [ERROR] default - no hay file
+[2022-07-27T18:30:39.218] [ERROR] default - no hay file
+[2022-07-27T18:30:39.226] [ERROR] default - no hay file
+[2022-07-27T19:05:00.026] [ERROR] default - no hay file
+[2022-07-27T19:05:00.047] [ERROR] default - no hay file
+[2022-07-27T19:05:00.052] [ERROR] default - no hay file
+[2022-07-27T19:05:00.057] [ERROR] default - no hay file
+[2022-07-27T19:05:00.063] [ERROR] default - no hay file
+[2022-07-28T10:12:00.693] [ERROR] default - no hay file
+[2022-07-28T10:12:04.754] [ERROR] default - no hay file
+[2022-07-28T10:17:03.167] [ERROR] default - no hay file
+[2022-07-28T10:17:17.970] [ERROR] default - no hay file
+[2022-07-28T10:17:52.902] [ERROR] default - no hay file
+[2022-07-28T10:17:58.317] [ERROR] default - no hay file
+[2022-07-28T10:44:59.523] [ERROR] default - no hay file
+[2022-07-28T10:45:48.033] [ERROR] default - no hay file
+[2022-07-28T10:49:07.192] [ERROR] default - no hay file
+[2022-07-28T10:52:49.310] [ERROR] default - no hay file
+[2022-07-28T10:53:45.240] [ERROR] default - no hay file
+[2022-07-28T10:55:02.289] [ERROR] default - no hay file
+[2022-07-28T10:55:03.906] [ERROR] default - no hay file
+[2022-07-28T10:55:04.714] [ERROR] default - no hay file
+[2022-07-28T10:55:06.123] [ERROR] default - no hay file
+[2022-07-28T10:55:08.213] [ERROR] default - no hay file
+[2022-07-28T10:57:19.772] [ERROR] default - no hay file
+[2022-07-28T10:58:08.984] [ERROR] default - no hay file
+[2022-07-28T11:01:06.183] [ERROR] default - no hay file
+[2022-07-28T11:03:55.110] [ERROR] default - no hay file
+[2022-07-28T11:06:28.643] [ERROR] default - no hay file
+[2022-07-28T11:07:19.212] [ERROR] default - no hay file
+[2022-07-28T11:07:33.454] [ERROR] default - no hay file
+[2022-07-28T11:08:42.745] [ERROR] default - no hay file
+[2022-07-28T11:37:50.972] [ERROR] default - no hay file
+[2022-07-28T11:40:40.308] [ERROR] default - no hay file
+[2022-07-28T11:41:09.341] [ERROR] default - no hay file
+[2022-07-28T11:42:20.150] [ERROR] default - no hay file
+[2022-07-28T11:42:45.651] [ERROR] default - no hay file
+[2022-07-28T11:43:30.412] [ERROR] default - no hay file
+[2022-07-28T13:20:24.005] [ERROR] default - CastError: Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"23"',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-07-28T13:20:41.961] [ERROR] default - no hay file
+[2022-07-28T13:21:17.950] [ERROR] default - CastError: Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"23"',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-07-28T13:21:34.958] [ERROR] default - no hay file
+[2022-07-28T13:23:44.924] [ERROR] default - CastError: Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"23"',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-07-28T13:24:02.544] [ERROR] default - no hay file
+[2022-07-28T13:27:25.005] [ERROR] default - CastError: Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"23"',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-07-28T13:27:43.413] [ERROR] default - no hay file
+[2022-07-28T13:28:07.909] [ERROR] default - CastError: Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"23"',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-07-28T13:32:49.679] [ERROR] default - no hay file
+[2022-07-28T13:33:53.307] [ERROR] default - {
+  stringValue: '"23"',
+  valueType: 'string',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  name: 'CastError',
+  message: 'Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"'
+}
+[2022-07-28T13:33:55.320] [ERROR] default - {
+  stringValue: '"23"',
+  valueType: 'string',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  name: 'CastError',
+  message: 'Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"'
+}
+[2022-07-28T13:34:14.328] [ERROR] default - no hay file
+[2022-07-28T13:35:11.683] [ERROR] default - {
+  stringValue: '"23"',
+  valueType: 'string',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  name: 'CastError',
+  message: 'Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"'
+}
+[2022-07-28T13:35:12.808] [ERROR] default - {
+  stringValue: '"23"',
+  valueType: 'string',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  name: 'CastError',
+  message: 'Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"'
+}
+[2022-07-28T13:35:37.822] [ERROR] default - no hay file
+[2022-07-28T13:35:43.492] [ERROR] default - no hay file
+[2022-07-28T13:37:04.026] [ERROR] default - {
+  stringValue: '"23"',
+  valueType: 'string',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  name: 'CastError',
+  message: 'Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"'
+}
+[2022-07-28T13:37:04.840] [ERROR] default - {
+  stringValue: '"23"',
+  valueType: 'string',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  name: 'CastError',
+  message: 'Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"'
+}
+[2022-07-28T13:37:41.500] [ERROR] default - {
+  stringValue: '"23"',
+  valueType: 'string',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  name: 'CastError',
+  message: 'Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"'
+}
+[2022-07-28T13:37:42.732] [ERROR] default - {
+  stringValue: '"23"',
+  valueType: 'string',
+  kind: 'ObjectId',
+  value: '23',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  name: 'CastError',
+  message: 'Cast to ObjectId failed for value "23" (type string) at path "_id" for model "products"'
+}
+[2022-07-28T13:38:22.590] [ERROR] default - no hay file
+[2022-07-28T13:38:24.079] [ERROR] default - no hay file
+[2022-08-19T15:17:00.925] [ERROR] default - CastError: Cast to ObjectId failed for value "admin" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"admin"',
+  kind: 'ObjectId',
+  value: 'admin',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-08-19T15:17:16.490] [ERROR] default - CastError: Cast to ObjectId failed for value "admin" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"admin"',
+  kind: 'ObjectId',
+  value: 'admin',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-08-19T15:17:17.130] [ERROR] default - CastError: Cast to ObjectId failed for value "admin" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"admin"',
+  kind: 'ObjectId',
+  value: 'admin',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-08-19T15:17:28.045] [ERROR] default - CastError: Cast to ObjectId failed for value "admins" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"admins"',
+  kind: 'ObjectId',
+  value: 'admins',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-08-19T15:17:51.460] [ERROR] default - CastError: Cast to ObjectId failed for value "admin" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"admin"',
+  kind: 'ObjectId',
+  value: 'admin',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-08-21T15:55:00.509] [ERROR] default - Error: products validation failed: image: Path `image` is required.
+    at ValidationError.inspect (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/error/validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/log4js/lib/layouts.js:64:57)
+    at app (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/log4js/lib/appenders/file.js:82:23)
+    at /home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/log4js/lib/appenders/logLevelFilter.js:7:7
+    at /home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/log4js/lib/log4js.js:43:5
+    at Array.forEach (<anonymous>) {
+  errors: {
+    image: ValidatorError: Path `image` is required.
+        at validate (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1330:13)
+        at SchemaString.SchemaType.doValidate (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1314:7)
+        at /home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/document.js:2761:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'image',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'products validation failed'
+}
+[2022-08-21T16:00:42.052] [ERROR] default - CastError: Cast to ObjectId failed for value "630280907fbe090f4f1914662" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"630280907fbe090f4f1914662"',
+  kind: 'ObjectId',
+  value: '630280907fbe090f4f1914662',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}
+[2022-08-21T16:01:31.612] [ERROR] default - CastError: Cast to ObjectId failed for value "630280907fbe090f4f1914664" (type string) at path "_id" for model "products"
+    at model.Query.exec (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4777:21)
+    at model.Query.Query.then (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:4876:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  messageFormat: undefined,
+  stringValue: '"630280907fbe090f4f1914664"',
+  kind: 'ObjectId',
+  value: '630280907fbe090f4f1914664',
+  path: '_id',
+  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer
+      at new BSONTypeError (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/error.ts:16:5)
+      at new ObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/bson/src/objectid.ts:88:15)
+      at castObjectId (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast/objectid.js:25:12)
+      at ObjectId.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schema/objectid.js:246:12)
+      at ObjectId.SchemaType.applySetters (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1189:12)
+      at ObjectId.SchemaType._castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1623:15)
+      at ObjectId.SchemaType.castForQuery (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1613:15)
+      at ObjectId.SchemaType.castForQueryWrapper (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/schematype.js:1590:20)
+      at cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/cast.js:344:32)
+      at model.Query.Query.cast (/home/tobias/Documentos/coderCursoBack/proyectoFinal/node_modules/mongoose/lib/query.js:5199:12),
+  valueType: 'string'
+}

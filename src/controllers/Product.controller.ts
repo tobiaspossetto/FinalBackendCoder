@@ -10,7 +10,7 @@ export default class productController {
       const products = await service.getAllProducts()
 
       if (products.error) {
-        return res.status(404).json({
+        return res.status(400).json({
           ...products
         })
       } else {
@@ -33,7 +33,7 @@ export default class productController {
       const products = await service.getProductsByCategory(req.params.cat)
 
       if (products.error) {
-        return res.status(404).json({
+        return res.status(400).json({
           ...products
         })
       } else {
@@ -56,13 +56,34 @@ export default class productController {
       const product = await service.getProductsById(req.params.id)
 
       if (product.error) {
-        return res.status(404).json({
+        return res.status(400).json({
           ...product
         })
       } else {
         return res.status(200).json({
           error: false,
           data: product.data
+        })
+      }
+    } catch (error) {
+      logger.error(error)
+      return res.status(500).json({
+        error: true,
+        data: { message: 'Ocurrio un error interno' }
+      })
+    }
+  }
+
+  async createProduct (req: Request, res: Response) {
+    try {
+      const result = await service.createProduct(req.body.product)
+      if (result.error) {
+        return res.status(400).json({
+          ...result
+        })
+      } else {
+        return res.status(201).json({
+          ...result
         })
       }
     } catch (error) {
