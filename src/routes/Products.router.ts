@@ -13,6 +13,7 @@ productsRouter.get('/', controller.getAllProducts)
 productsRouter.get('/cat/:cat', controller.getProductsByCategory)
 
 productsRouter.get('/id/:id', controller.getProductsById)
-
+productsRouter.put('/:id', verifyToken, isAdmin, productSchema, validateRequest, controller.updateProduct)
+productsRouter.delete('/:id', verifyToken, isAdmin, controller.deleteProduct)
 productsRouter.post('/create', verifyToken, isAdmin, productSchema, validateRequest, controller.createProduct)
 export default productsRouter

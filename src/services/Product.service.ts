@@ -77,4 +77,39 @@ export default class ProductsService {
       }
     }
   }
+
+  async updateProduct (prod:Iproduct, id:string) {
+    try {
+      const prodToUpdate = await persistence.getById(id)
+      if (prodToUpdate.error) {
+        return prodToUpdate
+      }
+
+      const result = await persistence.updateProduct(prod, prodToUpdate.data._id)
+      return result
+    } catch (error) {
+      logger.error(error)
+      return {
+        error: true,
+        data: { message: 'Ocurrio un error intentando actualizar el producto' }
+      }
+    }
+  }
+
+  async deleteProduct (id:string) {
+    try {
+      const prodToDeleteExist = await persistence.getById(id)
+      if (prodToDeleteExist.error) {
+        return prodToDeleteExist
+      }
+      const result = await persistence.deleteProduct(id)
+      return result
+    } catch (error) {
+      logger.error(error)
+      return {
+        error: true,
+        data: { message: 'Ocurrio un error intentando eliminar el producto' }
+      }
+    }
+  }
 }

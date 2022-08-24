@@ -85,4 +85,45 @@ export default class ProductPersistense {
       }
     }
   }
+
+  async updateProduct (newProduct:Iproduct, id:string) {
+    try {
+      const res = await ProductModel.findOneAndUpdate({ _id: id }, { $set: { ...newProduct } })
+      logger.info(id)
+      if (res == null) {
+        logger.error(res)
+        return {
+          error: true,
+          data: { message: 'El producto no se pudo actualizar' }
+        }
+      } else {
+        return {
+          error: false,
+          data: { id: res._id }
+        }
+      }
+    } catch (error) {
+      logger.error(error)
+      return {
+        error: true,
+        data: { message: 'Ocurrio un error actualizando el producto en la base de datos' }
+      }
+    }
+  }
+
+  async deleteProduct (id:string) {
+    try {
+      const response = await ProductModel.findOneAndDelete({ _id: id })
+      return {
+        error: false,
+        data: 'ok'
+      }
+    } catch (error) {
+      logger.error(error)
+      return {
+        error: true,
+        data: { message: 'Ocurrio un error borrando el producto en la base de datos' }
+      }
+    }
+  }
 }

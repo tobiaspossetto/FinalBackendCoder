@@ -23,3 +23,12 @@ export const verifyToken = (req:Request, res:Response, next:NextFunction) => {
     return res.status(403).json({ error: true, data: { message: 'Acceso denegado' } })
   }
 }
+
+export const verifyTokenFunction = (token:string) => {
+  try {
+    const verified = jwt.verify(token, <string>process.env.JWT_SECRET_KEY)
+    return { error: false, data: verified }
+  } catch (error) {
+    return { error: true, data: { message: 'No tiene autorizacion' } }
+  }
+}
