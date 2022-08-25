@@ -3,13 +3,12 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 
 import minimist from 'minimist'
-import routerViews from './routes/ViewsRoute'
 
-import userRouter from './routes/User.router'
+import userRouter from './user/router/User.router'
 import { getConnectionMongo } from './db/mongoConnection'
 
 import morgan from 'morgan'
-import productsRouter from './routes/Products.router'
+import productsRouter from './product/router/Products.router'
 
 import bodyParser from 'body-parser'
 dotenv.config()
@@ -26,10 +25,6 @@ app.use(morgan('tiny'))
 
 getConnectionMongo()
 
-app.set('views', './src/public/views')
-app.set('view engine', 'pug')
-
-app.use('/', routerViews)
 app.use('/api/user', userRouter)
 app.use('/api/products', productsRouter)
 export default app

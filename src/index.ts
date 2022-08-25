@@ -2,7 +2,7 @@ import http from 'http'
 import app, { PORT, args } from './app'
 import cluster from 'cluster'
 import { logger } from './helpers/log4js'
-import sockets from './routes/Msg.router'
+import sockets from './chat/router/Msg.router'
 const socketIo = require('socket.io')
 const numCPUs = require('os').cpus().length
 
@@ -18,15 +18,9 @@ if (args._[1] === 'CLUSTER' && cluster.isMaster) {
   const server = http.createServer(app)
 
   // conexion con socket
-  const httpServer = server.listen(PORT)
-  const io = socketIo(server, { cors: { origin: '*' } }) // you can change the cors to your own domain
-  // io.on('connection', (socket: { on: (arg0: string, arg1: () => void) => void }) => {
-  //   logger.info('a user connected')
+  server.listen(PORT)
+  const io = socketIo(server, { cors: { origin: '*' } })
 
-  //   socket.on('disconnect', () => {
-  //     logger.info('user disconnected')
-  //   })
-  // })
   sockets(io)
   logger.info('💯️ Server on port', PORT)
 }

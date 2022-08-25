@@ -1,11 +1,12 @@
 import { body } from 'express-validator'
 
 export const signUpSchema = [
-  body('email').notEmpty().withMessage('Hay un campo vacio').isEmail().withMessage('Falta el campo email o es incorrecto'),
-  body('password').notEmpty().withMessage('Hay un campo vacio').isString().withMessage('Falta el campo password o es incorrecto'),
-  body('name').notEmpty().withMessage('Hay un campo vacio').isString().withMessage('Falta el campo name o es incorrecto'),
-  body('phone').notEmpty().withMessage('Hay un campo vacio').isString().withMessage('Falta el campo phone o es incorrecto'),
-  body('address').notEmpty().withMessage('Hay un campo vacio').isString().withMessage('Falta el campo address o es incorrecto')
+  body('email').notEmpty().isEmail().withMessage('Falta el campo email o es incorrecto'),
+  body('password').notEmpty().isString().withMessage('Falta el campo password o es incorrecto'),
+  body('confirmPassword').notEmpty().withMessage('Falta el campo confirm password o es incorrecto'),
+  body('name').notEmpty().isString().withMessage('Falta el campo name o es incorrecto'),
+  body('phone').notEmpty().isString().withMessage('Falta el campo phone o es incorrecto'),
+  body('address').notEmpty().isString().withMessage('Falta el campo address o es incorrecto')
 
 ]
 

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express'
-import { UserModel } from '../Models/User.model'
+import { UserModel } from '../user/model/User.model'
 
 export const isAdmin = async (req: Request, res: Response, next: NextFunction) => {
   // @ts-ignore
@@ -8,6 +8,6 @@ export const isAdmin = async (req: Request, res: Response, next: NextFunction) =
   if (user.admin) {
     next()
   } else {
-    res.status(403).send('No autorizado: No tienes permisos para realizar esta acción')
+    res.status(403).json({ error: true, data: { message: 'No esta autorizado para realizar esta accion' } })
   }
 }

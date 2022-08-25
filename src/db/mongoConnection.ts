@@ -5,7 +5,7 @@ import { logger } from '../helpers/log4js'
 export async function getConnectionMongo () {
   try {
     // eslint-disable-next-line quotes
-    await mongoose.connect(`mongodb+srv://tobias:${process.env.MONGODB_ATLAS_PASSWORD}@cluster0.ulmpx.mongodb.net/ecommerce?retryWrites=true&w=majority`, {
+    await mongoose.connect(<string>process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true
     } as ConnectOptions)
