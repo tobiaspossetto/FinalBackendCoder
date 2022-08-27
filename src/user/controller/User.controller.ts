@@ -83,11 +83,10 @@ export default class UserController {
           data: { ...result.data }
         })
       } else {
-        return res
-          .json({
-            error: false,
-            data: result
-          }).status(201)
+        return res.status(201).json({
+          error: false,
+          data: result
+        })
       }
     } catch (error) {
       logger.error(error)
