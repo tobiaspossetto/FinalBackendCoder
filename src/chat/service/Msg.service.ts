@@ -9,7 +9,6 @@ export default class MsgService {
       if (tokenValid.error) {
         return tokenValid
       }
-      logger.warn(tokenValid)
 
       // @ts-ignore
       const isAdmin = await daos.isAdmin(tokenValid.data.id)
@@ -43,7 +42,6 @@ export default class MsgService {
       if (tokenValid.error) {
         return tokenValid
       }
-      logger.warn(tokenValid)
 
       // @ts-ignore
       const isAdmin = await daos.isAdmin(tokenValid.data.id)
